@@ -8,11 +8,11 @@ namespace EanrrangoS2_Tarea2
     {
         public App()
         {
-            InitializeComponent();
+            InitializeComponent(); 
 
             // NaNavigationPage -- habiliata lanavegacion entre paginas
 
-            MainPage = new NavigationPage(new Inicio());
+            MainPage = new NavigationPage(new Inicio());  
         }
 
         protected override void OnStart()
