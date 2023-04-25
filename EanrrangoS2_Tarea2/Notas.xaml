@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EanrrangoS2_Tarea2.Notas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="App Movil Notas Universidad Israel"  FontSize="24" HorizontalTextAlignment="Center"  />
+            <Label Text="Usuario Conectado" FontSize="20"  HorizontalTextAlignment="Start" />
+            <Label x:Name="lblUsuario"  Text="Usuario" FontSize="20"  HorizontalTextAlignment="Start" />
+
+            <Grid Margin="20,35,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    
+                </Grid.ColumnDefinitions>
+
+                 <BoxView Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="0" Text="Nota Seguimiento 1 : " HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <BoxView Grid.Column="1" Grid.Row="0" Color="DimGray" />
+                <Entry Grid.Column="1" Grid.Row="0" x:Name="txtSegNota1" Placeholder="Ingresar Nota 1 "  Keyboard="Numeric" ></Entry>
+
+              
+
+                <BoxView Grid.Column="0" Grid.Row="1" Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="1" Text="Nota Examen 1 :" HorizontalOptions="Center" VerticalOptions="Center" />
+                
+                <BoxView Grid.Row="1" Grid.Column="1" Color="DimGray" />
+                <Entry Grid.Row="1" Grid.Column="1"  x:Name="txtExam1" Placeholder="Nota Examen 1 "  Keyboard="Numeric" />
+
+                <BoxView Grid.Column="0" Grid.Row="2" Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="2" Text="Nota Parcial 1:" HorizontalOptions="Center" VerticalOptions="Center" />
+                
+                <BoxView Grid.Row="2" Grid.Column="1" Color="DimGray" />
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtParcial1" Placeholder="Parcial 1 "  IsEnabled="False" />
+
+               
+            </Grid>
+            <Button x:Name="btnCalcParcial1" Text="CALCULAR PARCIAL 1" Clicked="btnCalcParcial1_Clicked"  ></Button>
+
+            <Grid Margin="20,35,20,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+
+                <BoxView Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="0" Text="Nota Seguimiento 2 : " HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <BoxView Grid.Column="1" Grid.Row="0" Color="DimGray" />
+                <Entry Grid.Column="1" Grid.Row="0" x:Name="txtSegNota2" Placeholder="Ingresar Nota 2 " Keyboard="Numeric"  />
+
+                <BoxView Grid.Column="0" Grid.Row="1" Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="1" Text="Nota Examen 2 :" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <BoxView Grid.Row="1" Grid.Column="1" Color="DimGray" />
+                <Entry Grid.Row="1" Grid.Column="1"  x:Name="txtExam2" Placeholder="Nota Examen 2 " Keyboard="Numeric" />
+
+                <BoxView Grid.Column="0" Grid.Row="2" Color="LightBlue" />
+                <Label Grid.Column="0" Grid.Row="2" Text="Nota Parcial 1:" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                <BoxView Grid.Row="2" Grid.Column="1" Color="DimGray" />
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtParcial2" Placeholder="Parcial 2 " IsEnabled="False" />
+
+
+            </Grid>
+            <Button x:Name="btnCalcParcial2" Text="CALCULAR PARCIAL 2" Clicked="btnCalcParcial2_Clicked"  ></Button>
+
+            <Button x:Name="btnAprobado" Text="APROBACION" Clicked="btnAprobado_Clicked"  ></Button>
+
+            <Button x:Name="btnLimpiar" Text="LIMPIAR CAMPOS" Clicked="btnLimpiar_Clicked"  ></Button>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
