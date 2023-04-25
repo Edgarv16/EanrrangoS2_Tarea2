@@ -22,7 +22,7 @@ namespace EanrrangoS2_Tarea2
 			string usuario = txtUsuario.Text;
             string clave =   txtPassword.Text;
 
-            if (usuario == "edgar" && clave == "12345")
+            if (usuario == "edgar" && clave == "123456")
             {
                 Navigation.PushAsync(new Notas(usuario));
             }
