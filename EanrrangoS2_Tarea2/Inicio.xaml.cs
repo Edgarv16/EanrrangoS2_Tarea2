@@ -20,8 +20,26 @@ namespace EanrrangoS2_Tarea2
         private void btnAbrirNotas_Clicked(object sender, EventArgs e)
         {
 			string usuario = txtUsuario.Text;
+            string clave =   txtPassword.Text;
 
-			Navigation.PushAsync(new Notas(usuario));
+            if (usuario == "edgar" && clave == "12345")
+            {
+                Navigation.PushAsync(new Notas(usuario));
+            }
+            else
+            {
+                DisplayAlert("ERROR..","Usuario y contraseña incorrectos....!","cerrar");
+                txtUsuario.Text  = "";
+                txtPassword.Text = "";
+
+            }
+
+        
+        }
+
+        private void btnAbrirRegistro_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Registro());
 
         }
     }

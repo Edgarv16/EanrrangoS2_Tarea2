@@ -4,9 +4,12 @@
              x:Class="EanrrangoS2_Tarea2.Registro">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="REGISTRO DE USUARIOS" FontSize="25" HorizontalTextAlignment="Center"/>
+            <Grid>
+
+            </Grid>
+            
         </StackLayout>
+      
     </ContentPage.Content>
 </ContentPage>

@@ -5,12 +5,13 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="INICIO" FontSize="25" HorizontalTextAlignment="Center"/>
-            <Image Source="uisrael.png" WidthRequest="100" HeightRequest="100"/>
+            <Image Source="uisrael.png" WidthRequest="250" HeightRequest="250"/>
             
 
             <Grid>
 
                 <Grid.RowDefinitions>
+                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -28,9 +29,16 @@
                 <Label Text="Clave" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1"  Grid.Column="0"/>
                 <BoxView Grid.Row="1" Grid.Column="1" Color="Gray" />
                 <Entry x:Name="txtPassword"  Placeholder="Contraseña" IsPassword="True" Grid.Row="1"  Grid.Column="1"></Entry>
+
+                <Button x:Name="btnAbrirNotas" Text="INICIO" Clicked="btnAbrirNotas_Clicked" Grid.Row="3"  Grid.Column="0"></Button>
+
+                <Button x:Name="btnAbrirRegistro" Text="REGISTRAR" Clicked="btnAbrirRegistro_Clicked" Grid.Row="3"  Grid.Column="1"></Button>
+
+
+
             </Grid>
 
-            <Button x:Name="btnAbrirNotas" Text="ABRIR VENTANA NOTAS " Clicked="btnAbrirNotas_Clicked"></Button>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
